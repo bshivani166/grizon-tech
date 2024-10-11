@@ -1,0 +1,261 @@
+/* Start Basic */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    
+}
+section{
+    padding: 3rem 1.5rem;
+}
+.container{
+    width: 100%;
+}
+p{
+    font-size: 14px;
+    line-height: 1.6;
+}
+.btn-green{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    font-size: 14px;
+    margin: 0 2px;
+    color: #ffffff;
+    background-color: #0f6a38;
+    border-radius: 6px;
+    text-decoration: none;
+    min-width: 130px;
+    text-align: center;
+    cursor: pointer;
+    border: 0;
+}
+.btn-green:hover{
+    background-color: #5bb646;
+}
+/* End Basic */
+
+/* Start Header Section */
+header {
+    background-color: #ffffff;
+    padding: 1.5rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
+}
+.header-container, .event-details{
+    display: flex;
+    flex-direction: column;
+}
+header .logo{
+    display: flex;
+    justify-content: space-between;
+}
+.header-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header .logo a {
+    display: flex;
+    width: 120px;
+}
+header .logo a:first-child{
+    margin-right: 1rem;
+}
+header .logo img {
+    width: 100%;
+    height: 100%
+}
+.event-details{
+    margin: 1rem 0;
+}
+.event-details p:last-child{
+    margin-top: 0.5rem;
+}
+.event-details p .icon{
+    color: #005830;
+    font-size: 18px;
+    margin-right: 0.5rem !important;
+}
+/* End Header Section */
+
+
+/* Start Banner Section */
+.banner-container{
+    display: flex;
+    flex-direction: column;
+}
+.banner-content h1{
+    font-size: 21px;
+}
+.banner-content > strong, .banner-content .steps h3{
+    display: flex;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.6;
+}
+.banner-content > strong{
+    margin: 1rem 0 2rem;
+}
+.banner-content ol{
+    padding-left: 1rem;
+}
+.banner-content ol li{
+    font-size: 14px;
+    margin-top: 0.5rem;
+}
+.notice {
+    color: #dc3545;
+    margin-top: 1.5rem;
+}
+.banner-form,.input-container{
+    display: flex;
+    flex-direction: column;
+}
+/* .banner-form{
+    margin-top: 2rem;
+} */
+.input-container{
+    margin-top: 1.5rem;
+}
+.input-container label{
+    display: flex;
+    align-items: flex-start;
+    font-size: 14px;
+    font-weight: 600;
+}
+.input-container label img{
+    width: 6px;
+    height: 6px;
+    margin: 0.2rem 0 0 0.3rem;
+}
+
+.input-container input{
+    border: 1px solid #eeeeee;
+    border-radius: 5px;
+    background-color: transparent;
+    padding: 13px 10px;
+    margin-top: 0.5rem;
+    outline: 0;
+}
+.banner-form .btn-green{
+    border-radius: 0;
+    font-weight: 600;
+    margin-top: 1.5rem;
+}
+/* End Banner Section */
+
+/* Start Footer Section */
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #1a1831;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 1.5rem;
+}
+/* End Footer Section */
+
+@media screen and (min-width: 768px) {
+
+    section{
+        padding: 3rem 2rem;
+    }
+    /* Start Header Section */
+    header{
+        padding: 1.5rem 2rem;
+    }
+    .header-container{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logo,.event-details{
+        width: fit-content;
+    }
+    .event-details{
+        margin: 0;
+    }
+    /* End Header Section */
+
+    /* Start Banner Section */
+    .banner-container{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .banner-content{
+        width: 50%;
+    }
+    .banner-form{
+        width: 45%;
+    }
+    .input-container:first-child{
+        margin-top: 0;
+    }
+    /* End Banner Section */
+}
+
+@media screen and (min-width: 1024px){
+    /* Start Basic */
+    p{
+        font-size: 16px;
+        line-height: 1.8;
+    }
+    /* End Basic */
+
+}
+
+@media screen and (min-width: 1366px){
+
+    /* Start Basic */
+    .container{
+        width: 1200px;
+        margin: 0 auto;
+    }
+    section{
+        padding: 4rem 0;
+    }
+    /* End Basic */
+
+    /* Start Header Section */
+    header{
+        padding: 1rem 0;
+    }
+    header .logo a{
+        width: 180px;
+    }
+    /* End Header Section */
+
+    /* Start Banner Section */
+    .banner-content{
+        width: 57%;
+    }
+    .banner-content h1{
+        font-size: 32px;
+    }
+    .banner-content > strong{
+        font-size: 18px;
+        margin: 3rem 0 1.5rem;
+    }
+    .banner-content ol li{
+        font-size: 16px;
+    }
+    .banner-form{
+        width: 40%;
+    }
+    .banner-form .btn-green{
+        font-size: 18px;
+        padding: 15px 20px;
+    }
+    /* End Banner Section */
+
+}
+
+
