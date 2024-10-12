@@ -24,7 +24,9 @@ include('header.php'); // Include header.php
                 <form id="uploadForm" class="banner-form" action="upload.php" method="POST" enctype="multipart/form-data">
                     <div class="input-container">
                         <label for="booth-number">Enter your booth no <img src="images/red-star.svg" alt="red-star"></label>
-                        <input type="text" id="booth-number" name="booth-number" required>
+                        <!-- <input type="number" id="booth-number" name="booth-number" maxlength="10" required> -->
+                        <input type="number" id="booth-number" name="booth-number" required oninput="if(this.value.length > 10) this.value = this.value.slice(0, 10)">
+
                     </div>
                     <div class="input-container">
                         <label for="logo-upload">Select your logo <img src="images/red-star.svg" alt="red-star"></label>

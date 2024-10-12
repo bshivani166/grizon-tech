@@ -36,12 +36,13 @@ function generateBanner() {
     });
 }
 
-document.querySelector('.btn-green').addEventListener('click', function () {
-    const bannerWrapper = document.querySelector('.banner-wrapper');
-    html2canvas(bannerWrapper).then(canvas => {
-        const link = document.createElement('a');
-        link.href = canvas.toDataURL('image/png');
-        link.download = 'banner_with_booth.png';
-        link.click();
-    });
-});
+// document.querySelector('.btn-green').addEventListener('click', function () {
+//     const bannerWrapper = document.querySelector('.banner-wrapper');
+//     html2canvas(bannerWrapper).then(canvas => {
+//         const link = document.createElement('a');
+//         link.href = canvas.toDataURL('image/png');
+//         link.download = 'banner_with_booth.png';
+//         link.click();
+//     });
+// });
+
